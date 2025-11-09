@@ -18,6 +18,7 @@ As per the colors, I liked a somewhat dark blue-ish with light blue which I beli
 
 
 Figma Link: https://www.figma.com/design/AmR4gizyV7lG3jTiSbSdUt/Untitled?t=ic8QkDNcIM0Cz5WI-1
-
 Page: https://alex5674321.github.io/CV-Multimedia
+
+Cal dir que com al Figma no vaig calcular ven bé l'espai, vaig posar algún extra en el HTML ja quan el vaig fer. El Figma ha sigut més un esquema que seguir i no pas el resultat com a tal que volia, degut a la mala calculación per poder incloure alló que volia.
 
