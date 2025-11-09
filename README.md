@@ -18,5 +18,6 @@ As per the colors, I liked a somewhat dark blue-ish with light blue which I beli
 
 
 Figma Link: https://www.figma.com/design/AmR4gizyV7lG3jTiSbSdUt/Untitled?t=ic8QkDNcIM0Cz5WI-1
+
 Page: https://alex5674321.github.io/CV-Multimedia
 
