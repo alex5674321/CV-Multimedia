@@ -1,0 +1,201 @@
+/* ===== Fondo animado lateral ===== */
+.animated-margin {
+  position: fixed;
+  top: 0;
+  width: 10vw;          /* ancho del margen */
+  height: 100vh;
+  background: linear-gradient(0deg, #313244 35%, #89dceb 50%, #313244 65%);
+  background-size: 300% 300%;
+  animation: pulse 4s linear infinite alternate;
+  z-index: 0;
+  mask-image: url("test.svg");
+  mask-position: center;
+  mask-size: contain;
+
+  opacity: 0.8;
+}
+
+.animated-margin.left {
+  left: 0;
+}
+
+.animated-margin.right {
+  right: 0;
+}
+
+/* Animación de gradiente */
+@keyframes pulse {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* ===== Layout principal ===== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1e2e;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.contact-info {
+  margin-top: 1rem;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  width: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* CV principal */
+.cv-container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f6f6f9;
+  color: #1e1e2e;
+  border-radius: 15px;
+  margin: 4vh 12vw; /* deja margen para las franjas animadas */
+  width: 75%;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Columna izquierda */
+.left-column {
+  background-color: #262742;
+  color: #e0e0ff;
+  padding: 2rem;
+  border-right: 3px solid #1e1e2e;
+}
+
+.left-column h1 {
+  color: #89dceb;
+  margin-bottom: 0;
+}
+
+.left-column h3 {
+  color: #b0b0ff;
+  margin-top: 0.5rem;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline; /* opcional para efecto al pasar el ratón */
+}
+
+.profile-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #89dceb;
+  margin-bottom: 1rem;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.section h2 {
+  color: #89dceb;
+  border-bottom: 2px solid #89dceb;
+  padding-bottom: 0.3rem;
+}
+
+.section ul {
+  padding: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 7px;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-list li {
+  margin-bottom: 0.5rem;
+}
+
+.social-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Columna derecha */
+.right-column {
+  padding: 2rem;
+}
+
+.right-column h2 {
+  background-color: #89dceb;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  color: #1e1e2e;
+}
+
+.right-column p {
+  margin: 0.5rem 0;
+}
+
+
+.hobbies-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hobbies-list li p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.icon {
+  width: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.preview {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 24px;
+  width: 300px;        
+  z-index: 10;
+}
+
+.recognition-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recognition-list li {
+  margin-bottom: 1rem;
+}
+
+.recognition-list strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.hover-image:hover .preview {
+  display: block;
+}
